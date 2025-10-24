@@ -1,0 +1,169 @@
+
+{
+  "info": {
+    "name": "API Árbol AVL",
+    "_postman_id": "c6b2c2a5-6a8d-4af1-baa8-92d4a3b16a5b",
+    "description": "Colección de endpoints para probar la API de Árbol AVL en FastAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Agregar niño (POST)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": 101,\n    \"name\": \"María García\",\n    \"age\": 7\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/v1/child",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["api", "v1", "child"]
+        }
+      }
+    },
+    {
+      "name": "Agregar niño (varios ejemplos)",
+      "item": [
+        {
+          "name": "Juan Pérez",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 70,\n  \"name\": \"Juan Pérez\",\n  \"age\": 6\n}" },
+            "url": { "raw": "http://127.0.0.1:8000/api/v1/child", "protocol": "http", "host": ["127.0.0.1"], "port": "8000", "path": ["api", "v1", "child"] }
+          }
+        },
+        {
+          "name": "Ana López",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 6,\n  \"name\": \"Ana López\",\n  \"age\": 8\n}" },
+            "url": { "raw": "http://127.0.0.1:8000/api/v1/child", "protocol": "http", "host": ["127.0.0.1"], "port": "8000", "path": ["api", "v1", "child"] }
+          }
+        },
+        {
+          "name": "Carlos Sánchez",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": -2,\n  \"name\": \"Carlos Sánchez\",\n  \"age\": 7\n}" },
+            "url": { "raw": "http://127.0.0.1:8000/api/v1/child", "protocol": "http", "host": ["127.0.0.1"], "port": "8000", "path": ["api", "v1", "child"] }
+          }
+        },
+        {
+          "name": "Laura Torres",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 100,\n  \"name\": \"Laura Torres\",\n  \"age\": 9\n}" },
+            "url": { "raw": "http://127.0.0.1:8000/api/v1/child", "protocol": "http", "host": ["127.0.0.1"], "port": "8000", "path": ["api", "v1", "child"] }
+          }
+        },
+        {
+          "name": "Pedro Ramírez",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 90,\n  \"name\": \"Pedro Ramírez\",\n  \"age\": 6\n}" },
+            "url": { "raw": "http://127.0.0.1:8000/api/v1/child", "protocol": "http", "host": ["127.0.0.1"], "port": "8000", "path": ["api", "v1", "child"] }
+          }
+        },
+        {
+          "name": "Sofía Díaz",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 30,\n  \"name\": \"Sofía Díaz\",\n  \"age\": 8\n}" },
+            "url": { "raw": "http://127.0.0.1:8000/api/v1/child", "protocol": "http", "host": ["127.0.0.1"], "port": "8000", "path": ["api", "v1", "child"] }
+          }
+        },
+        {
+          "name": "Diego Castro",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 46,\n  \"name\": \"Diego Castro\",\n  \"age\": 7\n}" },
+            "url": { "raw": "http://127.0.0.1:8000/api/v1/child", "protocol": "http", "host": ["127.0.0.1"], "port": "8000", "path": ["api", "v1", "child"] }
+          }
+        },
+        {
+          "name": "Elena Ruiz",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 99,\n  \"name\": \"Elena Ruiz\",\n  \"age\": 9\n}" },
+            "url": { "raw": "http://127.0.0.1:8000/api/v1/child", "protocol": "http", "host": ["127.0.0.1"], "port": "8000", "path": ["api", "v1", "child"] }
+          }
+        },
+        {
+          "name": "Miguel Ángel Soto",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 33,\n  \"name\": \"Miguel Ángel Soto\",\n  \"age\": 8\n}" },
+            "url": { "raw": "http://127.0.0.1:8000/api/v1/child", "protocol": "http", "host": ["127.0.0.1"], "port": "8000", "path": ["api", "v1", "child"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Buscar niño por ID (GET)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/v1/child/70",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["api", "v1", "child", "70"]
+        }
+      }
+    },
+    {
+      "name": "Ver árbol completo (GET)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/v1/tree",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["api", "v1", "tree"]
+        }
+      }
+    },
+    {
+      "name": "Verificar balance del árbol (GET)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/v1/tree/balance",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["api", "v1", "tree", "balance"]
+        }
+      }
+    },
+    {
+      "name": "Limpiar árbol (DELETE)",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/v1/tree",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["api", "v1", "tree"]
+        }
+      }
+    }
+  ]
+}
