@@ -5,7 +5,6 @@ import json
 import sys
 import os
 
-# Añadir el directorio raíz al path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
 from service.AVL_service import AVLService
