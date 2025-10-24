@@ -2,7 +2,6 @@
 from typing import Optional, Dict, Any
 from pydantic import BaseModel
 
-
 class Child(BaseModel):
     def __init__(self, id: int, name: str, age: int):
         self.id = id
