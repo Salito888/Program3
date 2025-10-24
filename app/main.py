@@ -20,7 +20,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Incluir el router con prefijo
+
 app.include_router(avl_router, prefix="/api/v1")
 
 @app.get("/", tags=["Root"])
@@ -29,9 +29,9 @@ async def root():
         "message": "¡Bienvenido a la API del Árbol AVL!",
         "documentation": "/docs",
         "endpoints": {
-            "add_child": "POST /api/v1/children",
-            "get_children": "GET /api/v1/children",
-            "get_child": "GET /api/v1/children/{id}",
+            "add_child": "POST /api/v1/child",
+            "get_child": "GET /api/v1/child",
+            "get_child": "GET /api/v1/child/{id}",
             "get_tree": "GET /api/v1/tree",
             "clear_tree": "DELETE /api/v1/tree"
         }
@@ -41,8 +41,7 @@ if __name__ == "__main__":
     import uvicorn
     uvicorn.run(
         "app.main:app",
-        host="127.0.0.1",  # Cambiado de 0.0.0.0 a 127.0.0.1
+        host="127.0.0.1",  
         port=8000,
         reload=True
     )
-    

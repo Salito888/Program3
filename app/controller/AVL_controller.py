@@ -22,7 +22,7 @@ class ChildData:
         self.age = age
 
 # 1. Endpoint para agregar un niño
-@router.post("/children", status_code=status.HTTP_201_CREATED)
+@router.post("/child", status_code=status.HTTP_201_CREATED)
 async def add_child(request: Request):
     try:
         # Obtener datos del cuerpo de la petición
@@ -83,7 +83,7 @@ async def add_child(request: Request):
         )
 
 # 2. Endpoint para obtener un niño por ID
-@router.get("/children/{child_id}")
+@router.get("/child/{child_id}")
 async def get_child(child_id: int):
     try:
         result = avl_service.find_child(child_id)
